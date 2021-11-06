@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, assumenda blanditiis nam possimus ex consectetur?</p>
+    <form action="" id="survey-form">
+      <label for="name" id="name-label">
+        Name
+        <input type="text" id="name" placeholder="Enter Your Name" required />
+      </label>
+      <label for="email" id="email-label">
+        Email
+        <input type="email" id="email" placeholder="Enter Your Email" required />
+      </label>
+      <label for="age" id="number-label">
+        Age
+        <input type="number" id="number" placeholder="How Old Are You ?" min="15" max="50" required />
+      </label>
+      <label for="dropdown">
+        Which option best describes your current role?
+        <select id="dropdown">
+          <option disabled selected value>Select current role</option>
+          <option>Stundent</option>
+          <option>Freelancer</option>
+          <option>Job Seeker</option>
+        </select>
+      </label>
+      <label for="suggestion" id="suggestion-label"> Would you recommend freeCodeCamp to a friend? </label>
+      <input type="radio" name="suggest" id="suggestion" value="1" />Definetly <br />
+      <input type="radio" name="suggest" id="suggestion" value="2" />Maybe <br />
+      <input type="radio" name="suggest" id="suggestion" value="3" />Not Sure <br />
+      <br />
+      <label for="check" id="check-label"> What would you like to see improved? (Check all that apply)</label>
+      <input type="checkbox" name="suggest" id="check" value="1" />Back-End <br />
+      <input type="checkbox" name="suggest" id="check" value="2" />Front-End <br />
+      <input type="checkbox" name="suggest" id="check" value="3" />Fullstack <br /><br />
+      <label for="textarea" id="age-label">
+        Any comments or suggestions?
+        <textarea name="comment" id="textarea" cols="50" rows="10" placeholder="Enter Your Comment"></textarea>
+      </label>
+      <button id="submit">Submit</button>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
